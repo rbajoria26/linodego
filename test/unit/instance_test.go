@@ -89,9 +89,9 @@ func TestInstance_Get_MonthlyTransfer(t *testing.T) {
 	stats, err := base.Client.GetInstanceTransferMonthly(context.Background(), 12345, 2024, 11)
 	assert.NoError(t, err)
 
-	assert.Equal(t, 30471077120, stats.BytesIn)
-	assert.Equal(t, 22956600198, stats.BytesOut)
-	assert.Equal(t, 53427677318, stats.BytesTotal)
+	assert.Equal(t, 169256881, stats.BytesIn)
+	assert.Equal(t, 749315, stats.BytesOut)
+	assert.Equal(t, 170006196, stats.BytesTotal)
 }
 
 func TestInstance_Upgrade(t *testing.T) {
